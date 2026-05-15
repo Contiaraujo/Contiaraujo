@@ -1,8 +1,8 @@
-name: Generate Snake
+name: Generate Pacman
 
 on:
   schedule:
-    # Roda automaticamente a cada 24 horas
+    # Roda a cada 24 horas
     - cron: "0 0 * * *"
   workflow_dispatch:
 
@@ -10,15 +10,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate Snake SVG
-        uses: Platane/snk@v3
+      - name: Generate Pacman SVG
+        uses: abozanona/pacman-contribution-graph@prod
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_user_name: contiaraujo
+          # Se você quiser mudar as cores para o tema Tokyo Night:
+          # (Fundo, Nível 1, Nível 2, Nível 3, Nível 4)
+          github_graph_colors: "#1a1b26, #7aa2f7, #bb9af7, #f7768e, #9ece6a"
 
       - name: Push to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
