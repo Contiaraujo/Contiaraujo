@@ -13,10 +13,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Generate Pacman SVG
-        uses: abozanona/pacman-contribution-graph@master
+        uses: Yue-Sun/pacman-contribution-graph@main
         with:
           github_user_name: contiaraujo
-          # Se der erro com as cores customizadas, remova a linha abaixo
+          # As cores do Tokyo Night que combinam com seu perfil
           github_graph_colors: "#1a1b26, #7aa2f7, #bb9af7, #f7768e, #9ece6a"
 
       - name: Push to GitHub Pages
