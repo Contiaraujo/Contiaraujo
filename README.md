@@ -1,7 +1,10 @@
 <div align="center">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=header&reversal=true&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&animation=fadeIn&text=Bem%20Vindo%20👋&descSize=20&descAlign=50&descAlignY=50&textBg=false&theme=tokyonight" />
 </div>
-
+<div align="center">
+  <img src="https://raw.githubusercontent.com/contiaraujo/contiaraujo/output/github-snake.svg" alt="Snake animation" />
+  
+</div>
 <p align="center">
   Sinta-se à vontade para explorar meu perfil. Minhas redes sociais e meios de contato estarão no final da página.
 </p>
