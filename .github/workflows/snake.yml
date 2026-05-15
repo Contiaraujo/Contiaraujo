@@ -9,15 +9,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
       - name: Generate Pacman SVG
-        uses: Yue-Sun/pacman-contribution-graph@main
+        uses: Platane/snk@v3
         with:
           github_user_name: contiaraujo
-          # As cores do Tokyo Night que combinam com seu perfil
-          github_graph_colors: "#1a1b26, #7aa2f7, #bb9af7, #f7768e, #9ece6a"
+          outputs: |
+            dist/github-snake.svg?color_snake=#FFFF00&color_dots=#161b22,#0000ff,#1e90ff,#add8e6,#ffffff
+            dist/github-snake-dark.svg?color_snake=#FFFF00&color_dots=#1a1b26,#7aa2f7,#bb9af7,#f7768e,#9ece6a
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
