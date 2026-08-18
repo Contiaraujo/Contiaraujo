@@ -167,17 +167,6 @@
 
 <br>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Microsoft%20Foundry-0078D4?style=for-the-badge" alt="Microsoft Foundry" />
-  <img src="https://img.shields.io/badge/Copilot%20Studio-742774?style=for-the-badge" alt="Copilot Studio" />
-  <img src="https://img.shields.io/badge/ChatGPT-10A37F?style=for-the-badge" alt="ChatGPT" />
-  <img src="https://img.shields.io/badge/Codex-000000?style=for-the-badge" alt="Codex" />
-  <img src="https://img.shields.io/badge/Claude%20Code-D97757?style=for-the-badge" alt="Claude Code" />
-  <img src="https://img.shields.io/badge/GitHub%20Copilot-24292F?style=for-the-badge" alt="GitHub Copilot" />
-  <img src="https://img.shields.io/badge/Lovable-FF4F8B?style=for-the-badge" alt="Lovable" />
-</p>
-
----
 ---
 
 <!-- ========================================= -->
